@@ -22,10 +22,12 @@ $ npm install
 
 - Run scripts
 
-| Action                 | Usage          |
-| ---------------------- | -------------- |
-| Start development mode | `npm start`    |
-| Lint code              | `npm run lint` |
+| Action                 | Usage                |
+| ---------------------- | -------------------- |
+| Start development mode | `npm start`          |
+| Lint code              | `npm run lint`       |
+| Run tests              | `npm run test`       |
+| Run tests (watch mode) | `npm run test:watch` |
 
 ## Author
 

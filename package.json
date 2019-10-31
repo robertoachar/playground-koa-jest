@@ -5,15 +5,43 @@
   "author": "Roberto Achar <robertoachar@gmail.com>",
   "homepage": "https://github.com/robertoachar/playground-koa-jest#readme",
   "keywords": [
-    "node"
-  ],
-  "main": "main.js",
-  "files": [
-    "src"
+    "node",
+    "koa",
+    "jest",
+    "test"
   ],
   "scripts": {
     "lint": "eslint 'src/**/*.js'",
-    "start": "node main.js"
+    "start": "nodemon main.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "dotenv": "8.2.0",
+    "esm": "3.2.25",
+    "koa": "2.11.0",
+    "koa-bodyparser": "4.2.1",
+    "koa-helmet": "5.2.0",
+    "koa-router": "7.4.0",
+    "winston": "3.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.4",
+    "@babel/preset-env": "7.6.3",
+    "@types/jest": "24.0.21",
+    "babel-jest": "24.9.0",
+    "eslint": "6.6.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "6.5.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-prettier": "3.1.1",
+    "jest": "24.9.0",
+    "nodemon": "1.19.4",
+    "prettier": "1.18.2",
+    "supertest": "4.0.2"
   },
   "repository": {
     "type": "git",
@@ -21,17 +49,6 @@
   },
   "bugs": {
     "url": "https://github.com/robertoachar/playground-koa-jest/issues"
-  },
-  "dependencies": {
-    "esm": "3.2.25"
-  },
-  "devDependencies": {
-    "eslint": "6.6.0",
-    "eslint-config-airbnb-base": "14.0.0",
-    "eslint-config-prettier": "6.5.0",
-    "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-prettier": "3.1.1",
-    "prettier": "1.18.2"
   },
   "license": "MIT"
 }
